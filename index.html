@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <figure>☁️</figure>
+        <span>
+          <p>My Cloud</p>
+          <h1>My cloud, my place</h1>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">what</a></li>
+        <li><a href="#">demo</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">download</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>WTF is that</h2>
+        <p>
+          Tailwind CSS works by scanning all of your HTML files, JavaScript
+          components, and any other templates for class names, generating the
+          corresponding styles and then writing them to a static CSS file.
+        </p>
+        <q>It's fast, flexible, and reliable — with zero-runtime. </q>
+        <p>
+          The simplest and fastest way to get up and running with Tailwind CSS
+          from scratch is with the Tailwind CLI tool. The CLI is <a href="#">
+            also available
+            as a standalone executable
+          </a> if you want to use it without installing
+          Node.js.
+        </p>
+        <ul>
+          <li>Install Tailwind CSS</li>
+          <ol>
+            <li>
+              Install tailwindcss <strong>via npm</strong>, and create your tailwind.config.js
+              file.
+            </li>
+            <li>
+              Add the paths to all of your template files in your
+              tailwind.config.js file.
+            </li>
+          </ol>
+          <li>Add the <strong>Tailwind directives</strong> to your CSS</li>
+          <ol start="3">
+            <li>
+              Add the @tailwind directives for each of Tailwind’s layers to your
+              main CSS file.
+            </li>
+            <li>
+              <strong>Run the CLI</strong> tool to scan your template files for classes and build
+              your CSS.
+            </li>
+          </ol>
+          <li>Start the Tailwind CLI build process</li>
+          <li>Start using Tailwind in your HTML</li>
+        </ul>
+        <p>
+          <strong>Get familiar with some of the core concepts</strong> that make Tailwind CSS
+          different from writing traditional CSS.
+        </p>
+      </section>
+      <section>
+        <h2>Show me</h2>
+        <p>The theme section of your tailwind.config.js file is where you define your project’s color palette, type scale, fonts, breakpoints, border radius values, and more.</p>
+        <pre>
+          <code>
+const searchFilter = (c: ContactEmail) => {
+  const tokenizedQuery = normalize(searchValue, true).split(" ");
+
+  const groupNameTokens = c.LabelIDs.reduce((acc: string[], labelId) => {
+    const tokenized = normalize(contactGroupsMap[labelId].Name, true).split(
+      " "
+    );
+    return [...acc, ...tokenized];
+  }, []);
+
+  return (
+    tokenizedQuery.some((token) => normalize(c.Name, true).includes(token)) ||
+    tokenizedQuery.some((token) => normalize(c.Email, true).includes(token)) ||
+    tokenizedQuery.some((token) =>
+      groupNameTokens.some((g) => g.includes(token))
+    )
+  );
+};
+
+const filterContactsByGroup = useMemo(() => {
+  const filteredContacts = contactEmails;
+  if (selectedGroup === allContactsGroup.ID) {
+    return filteredContacts;
+  }
+
+  return filteredContacts.filter((contact: ContactEmail) =>
+    contact.LabelIDs.includes(selectedGroup)
+  );
+}, [selectedGroup]);
+          </code>
+        </pre>
+        <em>This is on the right</em>
+        <p>We provide a sensible default theme with a very generous set of values to get you started, but don’t be afraid to change it or extend it; you’re encouraged to customize it as much as you need to fit the goals of your design.</p>
+        <p>The theme object contains keys for screens, colors, and spacing, as well as a key for each customizable core plugin.</p>
+      </section>
+      <section>
+        <h2>Ok What's inside</h2>
+          <div>
+            <table>
+              <caption>Pricing table</caption>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Web</th>
+                  <th>Mobile</th>
+                  <th>Desktop</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ipsum</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Dolor</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Sit amet</td>
+                  <td>Yes</td>
+                  <td></td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Consectetur</td>
+                  <td>Yes</td>
+                  <td></td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Price</td>
+                  <td>Free</td>
+                  <td>Free</td>
+                  <td>Free</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+      </section>
+      <section>
+        <h2>Download</h2>
+        <p>Tailwind CSS v3.0 is a major update to the framework with a brand new internal engine and as such includes a small number of breaking changes.</p>
+        <p>We take stability very seriously and have worked hard to make any breaking changes as painless as possible. For most projects, upgrading to Tailwind CSS v3.0 should take less than 30 minutes.</p>
+        <div>
+          <button>Download</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <h3>Blog</h3>
+          <p>Refactoring UI is a design-for-developers book + video series put together by Adam Wathan and Steve Schoger. It covers literally everything we know about making things look awesome.</p>
+        </div>
+        <div>
+          <h3>Twitter</h3>
+          <p>Join over 10,000 members on the Discord group to chat about Tailwind and other related topics.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
