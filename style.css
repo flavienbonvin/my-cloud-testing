@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 
 :root {
   --accent-color-extralight: #ecf4ff;
@@ -12,6 +12,7 @@
   --external-link-dark: #db2777;
   --external-link-darker: #9d174d;
   --success: #16a34a;
+
   --sm: 40rem;
   --md: 48rem;
   --lg: 64rem;
@@ -49,7 +50,7 @@ header div {
 header figure {
   font-size: 10em;
   margin-block: 4rem 0;
-  filter: drop-shadow(0 25px 25px #000);
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
 }
 
 header p {
@@ -83,8 +84,8 @@ nav a {
   padding: 0.5em 1em;
   background-color: var(--accent-color);
   text-decoration: none;
-  color: #fff;
-  filter: drop-shadow(0 5px 5px #000);
+  color: white;
+  filter: drop-shadow(0 5px 5px rgb(0 0 0 / 0.1));
   transition: 0.15s ease-in-out;
   transition-property: background-color, filter;
 }
@@ -101,7 +102,7 @@ nav li:last-child a {
 
 nav a:hover {
   background-color: var(--accent-color-dark);
-  filter: drop-shadow(0 10px 10px #000);
+  filter: drop-shadow(0 10px 10px rgb(0 0 0 / 0.1));
 }
 
 section {
@@ -153,7 +154,7 @@ table tr th {
 
 table tfoot td:not(:first-child),
 table tr th {
-  font-weight: 700;
+  font-weight: bold;
   color: var(--accent-color-dark);
 }
 
@@ -203,7 +204,7 @@ section button {
   font-size: 2em;
   padding-inline: 4rem;
   padding-block: 2rem;
-  color: #fff;
+  color: white;
   margin: 0 auto;
   transition: background-color 0.15s ease-in-out;
   border-radius: 0.25rem;
@@ -216,7 +217,7 @@ section button:hover {
 
 footer {
   background-color: var(--accent-color);
-  color: #fff;
+  color: white;
   padding-block: 2em;
   padding-inline: 2em;
 }
@@ -229,7 +230,7 @@ footer section {
 }
 
 footer div {
-  flex: 1 1 0;
+  flex: 1 1 0px;
 }
 
 footer h3 {
@@ -254,7 +255,7 @@ footer h3 {
   nav ul {
     flex-direction: row;
     gap: 0.5em;
-    padding-inline: 0;
+    padding-inline: 0rem;
   }
 
   nav a {
